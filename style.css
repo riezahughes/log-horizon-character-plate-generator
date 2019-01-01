@@ -244,4 +244,83 @@ body{
   border-right: 5px solid #3f695b;
   background: rgba(30,63,46,0.8);
   border-bottom-right-radius: 7px;
+  position: relative;
 }
+#class-row h5{
+  margin-bottom: 4px;
+}
+#class-row .class-portrait.square{
+  position: absolute;
+  left: 10px;
+  top: -11px;
+  width: 65px;
+  height: 65px;
+  background-color: black;
+  z-index: 30;
+  /* Gradient */
+
+}
+
+#class-row .class-portrait.circle{
+
+}
+
+#class-row .class-portrait.hexagon-wrapper1{
+  position: absolute;
+  top: -16px;
+  left: 15px;
+  z-index: 30;
+}
+#class-row .class-portrait.hexagon-wrapper2{
+  position: absolute;
+  top: -18px;
+  left: 12px;
+  z-index: 29;
+}
+#class-row .class-portrait.diamond{
+
+}
+
+#hpmp-row{
+  border-left: 5px solid #3f695b;
+  border-right: 5px solid #3f695b;
+  background: rgba(30,63,46,0.8);
+  border-bottom-right-radius: 7px;
+  position: relative;
+}
+
+.hexagon1 {
+  background:transparent;
+  /* comment to see rectangle */ overflow: hidden; /**/
+  margin: 0 auto;
+  /* uncomment to see rhombus * outline: solid 1px red; /**/
+  width: 56.29px; /* height*sqrt(3)/2 */ height: 65px;
+  transform: rotate(-90deg) skewY(30deg);
+}
+.hexagon1:before, .hexagon1.border:after {
+  display: block; /* to be able to apply width/ height/ transform */
+  width: inherit; height: inherit;
+  transform: skewY(-30deg) rotate(60deg) translate(50%);
+  background: linear-gradient(to bottom, #ffffff 0%,#76cb87 100%);
+  background-size: cover;
+  content: '';
+}
+.hexagon1:before { transform: skewY(-30deg) rotate(60deg) translate(0); }
+
+.hexagon2 {
+  background:transparent;
+  /* comment to see rectangle */ overflow: hidden; /**/
+  margin: 0 auto;
+  /* uncomment to see rhombus * outline: solid 1px red; /**/
+  width: 60.62px; /* height*sqrt(3)/2 */ height: 70px;
+  transform: rotate(-90deg) skewY(30deg);
+}
+.hexagon2:before, .hexagon2.border:after {
+  display: block; /* to be able to apply width/ height/ transform */
+  width: inherit; height: inherit;
+  transform: skewY(-30deg) rotate(60deg) translate(50%);
+  background: #233b2d;
+  background-size: cover;
+  content: '';
+}
+.hexagon2:before { transform: skewY(-30deg) rotate(60deg) translate(0); }
