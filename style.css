@@ -13,14 +13,14 @@ body{
 
 #status-container .portrait{
   transform: rotate(45deg);
-  position: absolute;
-  top: 3px;
-  left: -66px;
-  height: 100px;
-  width: 100px;
-  background-color: #cbd187;
-  z-index: 15;
-  border: 3px solid #23642e;
+      position: absolute;
+      top: 3px;
+      left: -44px;
+      height: 100px;
+      width: 100px;
+      background-color: #cbd187;
+      z-index: 15;
+      border: 3px solid #23642e;
 }
 #status-container .portrait .portrait-container{
   width: 100%;
@@ -30,13 +30,13 @@ body{
 }
 
 #status-container .portrait .portrait-background-1{
-width: 75%;
-height: 75%;
-position: absolute;
-background-color:  #67d898;
-border-right: 3px solid #23642e;
-border-bottom: 3px solid #23642e;
-z-index: 17;
+  width: 75%;
+      height: 75%;
+      position: absolute;
+      background-color: #67d898;
+      border-right: 3px solid #23642e;
+      border-bottom: 3px solid #23642e;
+      z-index: 17;
 }
 
 #status-container .portrait .portrait-background-2{
@@ -47,6 +47,30 @@ z-index: 17;
   border-right: 3px solid #23642e;
   border-bottom: 3px solid #23642e;
   z-index: 16;
+}
+
+#status-container .portrait .portrait-background-3{
+  width: 62%;
+  height: 62%;
+  position: absolute;
+  background-color: #d3cf86;
+  border-left: 3px solid #23642e;
+  border-top: 3px solid #23642e;
+  z-index: 17;
+  margin-top: 9px;
+  margin-left: 9px;
+}
+
+#status-container .portrait .portrait-background-4{
+  width: 51%;
+  height: 51%;
+  position: absolute;
+  background-color: #23642e;
+  border-left: 3px solid #23642e;
+  border-top: 3px solid #23642e;
+  z-index: 18;
+  margin-top: 22px;
+  margin-left: 22px;
 }
 
 #status-container .class-container{
@@ -78,7 +102,7 @@ z-index: 17;
 .exp-bar{
   height: 5px;
   background-color: #2cbba7;
-  width: 113%;
+  width: 106%;
   position: relative;
 }
 
@@ -127,10 +151,10 @@ z-index: 17;
 #name-row::after{
   content: '';
   position: absolute;
-  width: 109%;
+  width: 101%;
   height: 1000%;
   top: -2px;
-  right: -114px;
+  right: -101px;
   background: rgba(30,63,46,0.8);
   transform-origin: 54% 0;
   transform: rotate(45deg);
@@ -145,8 +169,8 @@ z-index: 17;
 #name-row .topBorder{
   position: absolute;
   top: 0px;
-  left: 23px;
-  width: 85.5%;
+  left: 37px;
+  width: 78.5%;
   background-color: #3f695b;
   height: 5px;
   margin-left: auto;
@@ -213,4 +237,11 @@ z-index: 17;
 #race-row p{
   margin-top: 2px;
   margin-bottom: 2px;
+}
+
+#class-row{
+  border-left: 5px solid #3f695b;
+  border-right: 5px solid #3f695b;
+  background: rgba(30,63,46,0.8);
+  border-bottom-right-radius: 7px;
 }
