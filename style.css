@@ -27,16 +27,30 @@ body{
   height: 100%;
   position: relative;
   background-color: #d3cf86;
+  overflow: hidden;
+}
+
+#status-container .portrait .portrait-image{
+  width: 120%;
+  height: 125%;
+  position: absolute;
+  background: url(images/portrait-example.png);
+  top: -6px;
+  left: -5px;
+  z-index: 23;
+  background-position: top;
+  background-size: contain;
+  transform: rotate(-45deg);
 }
 
 #status-container .portrait .portrait-background-1{
   width: 75%;
-      height: 75%;
-      position: absolute;
-      background-color: #67d898;
-      border-right: 3px solid #23642e;
-      border-bottom: 3px solid #23642e;
-      z-index: 17;
+  height: 75%;
+  position: absolute;
+  background-color: #67d898;
+  border-right: 3px solid #23642e;
+  border-bottom: 3px solid #23642e;
+  z-index: 17;
 }
 
 #status-container .portrait .portrait-background-2{
@@ -93,8 +107,8 @@ body{
   position: absolute;
   height: 6px;
   width: 6px;
-  right: -7px;
-  top: -1px;
+  right: -6px;
+  top: -1.5px;
   background-color: #6db198;
   z-index: 10;
 }
@@ -240,11 +254,11 @@ body{
 }
 
 #class-row{
-  border-left: 5px solid #3f695b;
   border-right: 5px solid #3f695b;
   background: rgba(30,63,46,0.8);
   border-bottom-right-radius: 7px;
   position: relative;
+  padding-left: 20px;
 }
 #class-row h5{
   margin-bottom: 4px;
@@ -268,26 +282,25 @@ body{
 #class-row .class-portrait.hexagon-wrapper1{
   position: absolute;
   top: -16px;
-  left: 15px;
+  left: 20px;
   z-index: 30;
 }
 #class-row .class-portrait.hexagon-wrapper2{
   position: absolute;
   top: -18px;
-  left: 12px;
+  left: 18px;
   z-index: 29;
+}
+#class-row .class-portrait.hexagon-wrapper3{
+  position: absolute;
+  top: -10px;
+  left: 24px;
+  z-index: 30;
 }
 #class-row .class-portrait.diamond{
 
 }
 
-#hpmp-row{
-  border-left: 5px solid #3f695b;
-  border-right: 5px solid #3f695b;
-  background: rgba(30,63,46,0.8);
-  border-bottom-right-radius: 7px;
-  position: relative;
-}
 
 .hexagon1 {
   background:transparent;
@@ -324,3 +337,45 @@ body{
   content: '';
 }
 .hexagon2:before { transform: skewY(-30deg) rotate(60deg) translate(0); }
+
+.hexagon3 {
+  background:transparent;
+  /* comment to see rectangle */ overflow: hidden; /**/
+  margin: 0 auto;
+  /* uncomment to see rhombus * outline: solid 1px red; /**/
+  width: 47.63px;
+  height: 55px;
+  transform: rotate(-90deg) skewY(30deg);
+}
+.hexagon3:before, .hexagon3.border:after {
+  display: block;
+  width: inherit;
+  height: inherit;
+  transform: skewY(-30deg) rotate(60deg) translate(50%);
+  background: url(images/enchanter-icon.png);
+  background-size: cover;
+  content: '';
+  background-position-x: center;
+}
+.hexagon3:before { transform: skewY(-30deg) rotate(60deg) translate(0); }
+
+
+
+#hpmp-row{
+  border-left: 5px solid #3f695b;
+  border-right: 5px solid #3f695b;
+  background: rgba(30,63,46,0.8);
+  border-bottom-right-radius: 7px;
+  border-top-right-radius: 7px;
+  position: relative;
+}
+
+
+#guild-row{
+  border-left: 5px solid #3f695b;
+  border-right: 5px solid #3f695b;
+  background: rgba(30,63,46,0.8);
+  border-bottom-right-radius: 7px;
+  position: relative;
+  border-top-right-radius: 7px;
+}
