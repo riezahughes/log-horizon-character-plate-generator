@@ -113,6 +113,66 @@ body{
   z-index: 10;
 }
 
+.row-break .start{
+  transform: rotate(45deg);
+  position: absolute;
+  height: 11px;
+  width: 11px;
+  left: 1px;
+  top: -4px;
+  background-color: #2cbba7;
+  z-index: 10;
+}
+
+.row-break .border{
+  transform: rotate(45deg);
+  position: absolute;
+  height: 25px;
+  width: 29px;
+  left: -17px;
+  top: -18px;
+  z-index: 10;
+  border-left: 6px solid #3f695b !important;
+  border-bottom: 6px solid #3f695b !important;
+  border-top: none !important;
+  border-right: none !important;
+}
+
+.row-break .middle{
+  transform: rotate(45deg);
+  position: absolute;
+  height: 5px;
+  width: 5px;
+  left: 4px;
+  top: -0.5px;
+  background-color: rgba(30,63,46,0.8);
+  z-index: 10;
+}
+
+.row-break .arrow-up{
+  transform: rotate(45deg);
+  position: absolute;
+  height: 13px;
+  width: 13px;
+  left: 0px;
+  top: -9px;
+  z-index: 10;
+  border-left: 3px solid #67d898;
+  border-top: 3px solid #67d898;
+}
+
+.row-break .arrow-up2{
+  transform: rotate(45deg);
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  left: -5.5px;
+  top: -18px;
+  z-index: 10;
+  border-left: 6px solid #2cbba7;
+  border-top: 6px solid #2cbba7;
+}
+
 .exp-bar{
   height: 5px;
   background-color: #2cbba7;
